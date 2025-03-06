@@ -93,6 +93,8 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     text-align: center;
+    width: 600px;
+    height: 300px;
 }
 
 .form-container h2 {
