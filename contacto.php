@@ -18,9 +18,11 @@ class Contacto {
                 </div>";
     }
 }
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $contacto = new Contacto($_POST['nombre'], $_POST['email'], $_POST['mensaje']);
-    echo $contacto->mostrarMensaje();
+    $nombre = $_POST['nombre'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $mensaje = $_POST['mensaje'] ?? '';
 }
+
+
 
