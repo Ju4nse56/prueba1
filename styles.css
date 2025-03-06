@@ -3,20 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
-.message-box {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-        }
+
 /* Estilo para el encabezado */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+    font-size: 24px;
 }
 
 /* Estilo para el menú de navegación */
@@ -30,6 +26,9 @@ nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -40,6 +39,8 @@ nav a:hover {
 /* Contenido principal */
 .main-content {
     padding: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* Estilos para la ventana emergente */
@@ -61,6 +62,7 @@ nav a:hover {
     border-radius: 10px;
     width: 80%;
     max-width: 500px;
+    text-align: center;
 }
 
 .popup h2 {
@@ -71,14 +73,30 @@ nav a:hover {
 .close-btn {
     background-color: red;
     color: white;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    background-color: darkred;
 }
 
 /* Estilos del formulario de contacto */
 .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
 }
 
 .form-container input,
@@ -86,6 +104,14 @@ nav a:hover {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container textarea {
+    resize: vertical;
+    height: 100px;
 }
 
 .form-container button {
@@ -94,9 +120,29 @@ nav a:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .form-container button:hover {
     background-color: #555;
 }
+
+/* Estilos para el cuadro de mensaje enviado */
+.message-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.message-box h2 {
+    color: #333;
+    margin-top: 0;
+}
+
 
