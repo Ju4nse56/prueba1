@@ -39,13 +39,13 @@
                 <button type="submit">Enviar</button>
             </form>
             <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
-                <div class="message-box">
-                    <h2>Datos Enviados:</h2>
-                    <p><strong>Nombre:</strong> <?php echo $nombre; ?></p>
-                    <p><strong>Email:</strong> <?php echo $email; ?></p>
-                    <p><strong>Mensaje:</strong> <?php echo nl2br($mensaje); ?></p>
-                </div>
-            <?php endif; ?>
+            <div class="message-box">
+                <h2>Datos Enviados:</h2>
+                <p><strong>Nombre:</strong> <?php echo htmlspecialchars($_POST['nombre']); ?></p>
+                <p><strong>Email:</strong> <?php echo htmlspecialchars($_POST['email']); ?></p>
+                <p><strong>Mensaje:</strong> <?php echo nl2br(htmlspecialchars($_POST['mensaje'])); ?></p>
+            </div>
+        <?php endif; ?>
         </div>
     </div>
 
