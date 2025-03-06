@@ -38,6 +38,11 @@
                 <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
+            <?php if ($mensajeEnviado): ?>
+                <p class="success-message">✅ Gracias por tu mensaje, <strong><?php echo $nombre; ?></strong>. Nos pondremos en contacto contigo pronto.</p>
+            <?php elseif ($errorEnvio): ?>
+                <p class="error-message">❌ Hubo un error al enviar el mensaje. Intenta nuevamente.</p>
+            <?php endif; ?>
         </div>
     </div>
 
